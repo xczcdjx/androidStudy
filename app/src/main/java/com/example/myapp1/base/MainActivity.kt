@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApp1Theme {
                 // A surface container using the 'background' color from the theme
-                GreetingPreview()
+
                 /*Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

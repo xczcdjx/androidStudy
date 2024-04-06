@@ -33,6 +33,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapp1.components.Btn
+import com.example.myapp1.initial.CardList
+import com.example.myapp1.initial.Conversation
+import com.example.myapp1.initial.Message
+import com.example.myapp1.initial.MsgData
 import com.example.myapp1.ui.theme.MyApp1Theme
 
 class MainActivity : ComponentActivity() {
@@ -48,13 +52,15 @@ class MainActivity : ComponentActivity() {
                         .fillMaxHeight(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    BirthCard(t = "Happy birthday", a = "zhangSan", modifier = Modifier.background(MaterialTheme.colorScheme.background))
+//                    BirthCard(t = "Happy birthday", a = "zhangSan", modifier = Modifier.background(MaterialTheme.colorScheme.background))
 //                    Btn()
                 }
+                Conversation(messages = MsgData.messages)
             }
         }
     }
 }
+/*
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -77,4 +83,4 @@ fun GreetingPreview() {
             .padding(8.dp)
             .background(MaterialTheme.colorScheme.background))
     }
-}
+}*/
