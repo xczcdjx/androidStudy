@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -47,8 +48,8 @@ class MainActivity : ComponentActivity() {
                         .fillMaxHeight(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-//                    GreetingPreview()
-                    Btn()
+                    BirthCard(t = "Happy birthday", a = "zhangSan", modifier = Modifier.background(MaterialTheme.colorScheme.background))
+//                    Btn()
                 }
             }
         }
@@ -72,6 +73,8 @@ fun BirthCard(t:String,a:String,modifier: Modifier=Modifier){
 @Composable
 fun GreetingPreview() {
     MyApp1Theme {
-        BirthCard("Happy birthday zhangSan","liShi", modifier = Modifier.padding(8.dp))
+        BirthCard("Happy birthday zhangSan","liShi", modifier = Modifier
+            .padding(8.dp)
+            .background(MaterialTheme.colorScheme.background))
     }
 }
