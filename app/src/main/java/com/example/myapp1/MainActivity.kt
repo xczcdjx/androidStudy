@@ -37,6 +37,7 @@ import com.example.myapp1.initial.CardList
 import com.example.myapp1.initial.Conversation
 import com.example.myapp1.initial.Message
 import com.example.myapp1.initial.MsgData
+import com.example.myapp1.practice.BusinessCard
 import com.example.myapp1.ui.theme.MyApp1Theme
 
 class MainActivity : ComponentActivity() {
@@ -55,7 +56,8 @@ class MainActivity : ComponentActivity() {
 //                    BirthCard(t = "Happy birthday", a = "zhangSan", modifier = Modifier.background(MaterialTheme.colorScheme.background))
 //                    Btn()
                 }
-                Conversation(messages = MsgData.messages)
+//                Conversation(messages = MsgData.messages)
+                BusinessCard()
             }
         }
     }
