@@ -22,12 +22,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapp1.R
-@Preview
+@Preview("businessCard")
 @Composable
 fun BusinessCard(){
     val user=User("fullname","1314","520@qq.com")
     val letter=Letter("fullname","1314")
-    val info= mapOf<String,String>("user" to "zhangSan","age" to "181","phone" to "13141314")
+    val info= mapOf<String,String>("user" to "zhangSan111","age" to "18","phone" to "13141314")
     Column(modifier = Modifier
         .fillMaxSize()
         .fillMaxHeight(),

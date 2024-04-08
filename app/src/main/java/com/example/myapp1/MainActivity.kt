@@ -38,6 +38,7 @@ import com.example.myapp1.initial.Conversation
 import com.example.myapp1.initial.FoldList
 import com.example.myapp1.initial.Message
 import com.example.myapp1.initial.MsgData
+import com.example.myapp1.practice.BusinessCard
 import com.example.myapp1.ui.theme.MyApp1Theme
 
 class MainActivity : ComponentActivity() {
@@ -57,7 +58,8 @@ class MainActivity : ComponentActivity() {
 //                    Btn()
                 }
 //                Conversation(messages = MsgData.messages)
-                FoldList(messages = MsgData.messages)
+                BusinessCard()
+//                FoldList(messages = MsgData.messages)
             }
         }
     }
