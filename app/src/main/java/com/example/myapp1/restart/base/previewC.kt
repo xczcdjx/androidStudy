@@ -1,4 +1,4 @@
-package com.example.myapp1.restart
+package com.example.myapp1.restart.base
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

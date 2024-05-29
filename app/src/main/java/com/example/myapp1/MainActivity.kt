@@ -49,6 +49,7 @@ import com.example.myapp1.restart.base.ImageAd
 import com.example.myapp1.restart.base.StateUse
 import com.example.myapp1.restart.base.SwitchAd
 import com.example.myapp1.restart.base.TextFieldAd
+import com.example.myapp1.restart.layout.ListItemAd
 import com.example.myapp1.ui.theme.MyApp1Theme
 
 class MainActivity : ComponentActivity() {
@@ -82,7 +83,7 @@ class MainActivity : ComponentActivity() {
                     verticalArrangement = Arrangement.SpaceAround,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Common(str = "Button") {
+                   /* Common(str = "Button") {
                         ButtonAd()
                     }
                     Common(str = "Image") {
@@ -96,6 +97,9 @@ class MainActivity : ComponentActivity() {
                     }
                     Common(str = "loginForm") {
                         TextFieldAd()
+                    }*/
+                    Common(str = "listItem") {
+                        ListItemAd()
                     }
                 }
             }
