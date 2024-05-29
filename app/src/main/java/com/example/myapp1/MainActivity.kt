@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -33,6 +34,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapp1.components.Btn
+import com.example.myapp1.components.FlowLayout
 import com.example.myapp1.initial.CardList
 import com.example.myapp1.initial.Conversation
 import com.example.myapp1.initial.FoldList
@@ -64,6 +66,9 @@ class MainActivity : ComponentActivity() {
 //                FoldList(messages = MsgData.messages)
 //                State()
                 Effect()
+                Common(str = "Flow layout") {
+                    FlowLayout()
+                }
             }
         }
     }
@@ -92,3 +97,12 @@ fun GreetingPreview() {
             .background(MaterialTheme.colorScheme.background))
     }
 }*/
+@Composable
+fun Common(str:String, cb:@Composable () -> Unit){
+    Column(modifier= Modifier
+        .fillMaxWidth()) {
+        Text(str)
+        Spacer(modifier=Modifier.padding(vertical = 5.dp))
+        cb()
+    }
+}
