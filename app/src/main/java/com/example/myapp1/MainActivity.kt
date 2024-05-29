@@ -46,6 +46,7 @@ import com.example.myapp1.reactModule.Effect
 import com.example.myapp1.reactModule.State
 import com.example.myapp1.restart.base.ButtonAd
 import com.example.myapp1.restart.base.ImageAd
+import com.example.myapp1.restart.base.StateUse
 import com.example.myapp1.ui.theme.MyApp1Theme
 
 class MainActivity : ComponentActivity() {
@@ -84,6 +85,9 @@ class MainActivity : ComponentActivity() {
                     }
                     Common(str = "Image") {
                         ImageAd()
+                    }
+                    Common(str = "State") {
+                        StateUse()
                     }
                 }
             }
