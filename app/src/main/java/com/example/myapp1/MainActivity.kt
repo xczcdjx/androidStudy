@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -43,10 +44,12 @@ import com.example.myapp1.initial.MsgData
 import com.example.myapp1.practice.BusinessCard
 import com.example.myapp1.reactModule.Effect
 import com.example.myapp1.reactModule.State
+import com.example.myapp1.restart.base.ButtonAd
+import com.example.myapp1.restart.base.ImageAd
 import com.example.myapp1.ui.theme.MyApp1Theme
 
 class MainActivity : ComponentActivity() {
-    private val Tag="main"
+    private val Tag = "main"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -65,14 +68,29 @@ class MainActivity : ComponentActivity() {
 //                BusinessCard()
 //                FoldList(messages = MsgData.messages)
 //                State()
-                Effect()
-                Common(str = "Flow layout") {
-                    FlowLayout()
+                /* Effect()
+                 Common(str = "Flow layout") {
+                     FlowLayout()
+                 }*/
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .fillMaxHeight(),
+                    verticalArrangement = Arrangement.SpaceAround,
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Common(str = "Button") {
+                        ButtonAd()
+                    }
+                    Common(str = "Image") {
+                        ImageAd()
+                    }
                 }
             }
         }
     }
 }
+
 /*
 
 @Composable
@@ -98,11 +116,13 @@ fun GreetingPreview() {
     }
 }*/
 @Composable
-fun Common(str:String, cb:@Composable () -> Unit){
-    Column(modifier= Modifier
-        .fillMaxWidth()) {
+fun Common(str: String, cb: @Composable () -> Unit) {
+    Column(
+        modifier = Modifier
+//            .fillMaxWidth()
+    ) {
         Text(str)
-        Spacer(modifier=Modifier.padding(vertical = 5.dp))
+        Spacer(modifier = Modifier.padding(vertical = 5.dp))
         cb()
     }
 }
