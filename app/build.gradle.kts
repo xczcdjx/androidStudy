@@ -51,6 +51,7 @@ android {
 
 dependencies {
     implementation("xyz.junerver.compose:hooks:1.0.11")
+    implementation("androidx.compose.material:material-icons-extended:1.6.7")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
