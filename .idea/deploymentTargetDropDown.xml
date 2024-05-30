@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="Android.MyApp1.app">
+        <State />
+      </entry>
       <entry key="BoxFun">
         <State />
       </entry>
