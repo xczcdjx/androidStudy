@@ -49,7 +49,9 @@ import com.example.myapp1.restart.base.ImageAd
 import com.example.myapp1.restart.base.StateUse
 import com.example.myapp1.restart.base.SwitchAd
 import com.example.myapp1.restart.base.TextFieldAd
+import com.example.myapp1.restart.layout.LazyColumnAd
 import com.example.myapp1.restart.layout.ListItemAd
+import com.example.myapp1.restart.layout.TestAd
 import com.example.myapp1.ui.theme.MyApp1Theme
 
 class MainActivity : ComponentActivity() {
@@ -98,8 +100,11 @@ class MainActivity : ComponentActivity() {
                     Common(str = "loginForm") {
                         TextFieldAd()
                     }*/
-                    Common(str = "listItem") {
+                   /* Common(str = "listItem") {
                         ListItemAd()
+                    }*/
+                    Common(str = "lazyColumn") {
+                        TestAd()
                     }
                 }
             }
