@@ -52,6 +52,7 @@ import com.example.myapp1.restart.base.TextFieldAd
 import com.example.myapp1.restart.layout.LazyColumnAd
 import com.example.myapp1.restart.layout.ListItemAd
 import com.example.myapp1.restart.layout.TestAd
+import com.example.myapp1.restart.views.DropDownMenuAd
 import com.example.myapp1.restart.views.TabRowAd
 import com.example.myapp1.ui.theme.MyApp1Theme
 
@@ -108,7 +109,8 @@ class MainActivity : ComponentActivity() {
                         TestAd()
                     }*/
                     Common(str = "View") {
-                        TabRowAd()
+//                        TabRowAd()
+                        DropDownMenuAd()
                     }
                 }
             }
