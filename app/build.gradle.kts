@@ -48,10 +48,12 @@ android {
         }
     }
 }
-
+val nav_version = "2.7.7"
 dependencies {
     implementation("xyz.junerver.compose:hooks:1.0.11")
     implementation("androidx.compose.material:material-icons-extended:1.6.7")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0")
+    implementation("androidx.navigation:navigation-compose:$nav_version")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

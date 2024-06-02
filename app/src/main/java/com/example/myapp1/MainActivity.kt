@@ -52,6 +52,8 @@ import com.example.myapp1.restart.base.TextFieldAd
 import com.example.myapp1.restart.layout.LazyColumnAd
 import com.example.myapp1.restart.layout.ListItemAd
 import com.example.myapp1.restart.layout.TestAd
+import com.example.myapp1.restart.router.NavigateAd
+import com.example.myapp1.restart.router.NavigateParamsAd
 import com.example.myapp1.restart.views.DropDownMenuAd
 import com.example.myapp1.restart.views.SurfaceAd
 import com.example.myapp1.restart.views.TabRowAd
@@ -109,11 +111,13 @@ class MainActivity : ComponentActivity() {
                    /* Common(str = "lazyColumn") {
                         TestAd()
                     }*/
-                    Common(str = "View") {
-//                        TabRowAd()
-//                        DropDownMenuAd()
+                   /* Common(str = "View") {
+                        TabRowAd()
+                        DropDownMenuAd()
                         SurfaceAd()
-                    }
+                    }*/
+//                    NavigateAd()
+                    NavigateParamsAd()
                 }
             }
         }
