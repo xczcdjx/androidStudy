@@ -36,7 +36,7 @@ fun LifeAd() {
     }
     val scope = rememberCoroutineScope()
     val scaff= rememberBottomSheetScaffoldState()
-    val currentOnTimeout by rememberUpdatedState()
+//    val currentOnTimeout by rememberUpdatedState()rememberUpdatedStatez
     // Unit 只会挂载时执行一次
     LaunchedEffect(count) {
         L.log("yyyyyyyyyy$count")
