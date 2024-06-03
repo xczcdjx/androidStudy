@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapp1"
-        minSdk = 30
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -50,10 +50,11 @@ android {
 }
 val nav_version = "2.7.7"
 dependencies {
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.34.0") // 沉浸式状态栏
+    implementation("androidx.navigation:navigation-compose:$nav_version")
     implementation("xyz.junerver.compose:hooks:1.0.11")
     implementation("androidx.compose.material:material-icons-extended:1.6.7")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0")
-    implementation("androidx.navigation:navigation-compose:$nav_version")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
