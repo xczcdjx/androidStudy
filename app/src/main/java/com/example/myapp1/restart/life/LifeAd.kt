@@ -10,6 +10,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.TextField
 import androidx.compose.material3.rememberBottomSheetScaffoldState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -27,6 +28,7 @@ import kotlinx.coroutines.launch
 @OptIn(ExperimentalMaterial3Api::class)
 @Preview(showBackground = true)
 @Composable
+// 生命周期
 fun LifeAd() {
     var count by remember {
         mutableStateOf(0)
@@ -35,7 +37,7 @@ fun LifeAd() {
         mutableStateOf("")
     }
     val scope = rememberCoroutineScope()
-    val scaff= rememberBottomSheetScaffoldState()
+    val scaff = rememberBottomSheetScaffoldState()
 //    val currentOnTimeout by rememberUpdatedState()rememberUpdatedStatez
     // Unit 只会挂载时执行一次
     LaunchedEffect(count) {
@@ -58,5 +60,17 @@ fun LifeAd() {
         TextField(value = state, onValueChange = { state = it }, label = {
             Text("账号")
         })
+        if (count % 2 == 0) SonAd(c = count)
     }
+}
+
+@Composable
+fun SonAd(c: Int) {
+    DisposableEffect(Unit) {
+        L.log("执行 $c")
+        onDispose {
+            L.log("销毁 $c")
+        }
+    }
+    Text(text = "子组件count $c")
 }
