@@ -27,6 +27,7 @@ fun BottomScaffoldTest() {
     val scope = rememberCoroutineScope()
     val scaffoldState =rememberBottomSheetScaffoldState()
     BottomSheetScaffold(
+        modifier = Modifier.statusBarsPadding(),
         scaffoldState=scaffoldState,
         topBar = {
             TopAppBar(title = { Text(text = "主页") }, navigationIcon = {
