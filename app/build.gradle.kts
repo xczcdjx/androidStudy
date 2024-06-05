@@ -50,8 +50,10 @@ android {
 }
 val nav_version = "2.7.7"
 dependencies {
+    implementation("androidx.compose.material3:material3:1.3.0-beta02")
+    implementation("androidx.compose.material:material:1.7.0-beta02") // material backdropScaffold
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.34.0") // 沉浸式状态栏
-    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation("androidx.navigation:navigation-compose:$nav_version") // 导航库
     implementation("xyz.junerver.compose:hooks:1.0.11")
     implementation("androidx.compose.material:material-icons-extended:1.6.7")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0")

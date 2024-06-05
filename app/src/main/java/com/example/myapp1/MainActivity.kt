@@ -55,8 +55,13 @@ import com.example.myapp1.restart.base.StateUse
 import com.example.myapp1.restart.base.SwitchAd
 import com.example.myapp1.restart.base.TextFieldAd
 import com.example.myapp1.restart.correspond.MesAd
+import com.example.myapp1.restart.layout.BottomScaffoldTest
 import com.example.myapp1.restart.layout.LazyColumnAd
 import com.example.myapp1.restart.layout.ListItemAd
+import com.example.myapp1.restart.layout.ScaffoldAd
+import com.example.myapp1.restart.layout.ScaffoldAd2
+import com.example.myapp1.restart.layout.ScaffoldAd3
+import com.example.myapp1.restart.layout.ScaffoldAd4
 import com.example.myapp1.restart.layout.TestAd
 import com.example.myapp1.restart.life.LifeAd
 import com.example.myapp1.restart.router.NavigateAd
@@ -141,7 +146,9 @@ class MainActivity : ComponentActivity() {
 //                    NavigateAd()
 //                    NavigateParamsAd()
 //                    LifeAd()
-                    MesAd()
+//                    MesAd()
+//                    ScaffoldAd4()
+                    BottomScaffoldTest()
                 }
             }
         }
